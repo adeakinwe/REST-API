@@ -1,0 +1,25 @@
+GET http://localhost:2200/friends
+
+###
+GET  http://localhost:2200/friends/5eccefccf5964f21e0b2242a
+
+###
+POST http://localhost:2200/friends
+Content-Type: application/json
+
+{
+    "name": "Deji",
+    "age": 27,
+    "discipline": "Banker"
+}
+
+###
+DELETE http://localhost:2200/friends/5eccefe3f5964f21e0b2242c
+
+###
+PATCH  http://localhost:2200/friends/5eccefccf5964f21e0b2242a
+Content-Type: application/json
+
+{
+    "name": "Oladeji"
+}
